@@ -13,7 +13,7 @@ const NewsBoard = ({category}) => {
 
 
     useEffect(()=>{
-      let url = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
+      let url = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=9d9d778dca574e3698bea3dc978ef448`;
     fetch(url).then(response=> response.json()).then(data=> setArticles(data.articles)  );
       
     },[category])
